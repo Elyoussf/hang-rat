@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A* Pathfinding Visualization</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        #controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 100;
+        }
+        button { margin: 5px; padding: 5px 10px; }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <button id="setStart">Set Start</button>
+        <button id="setEnd">Set End</button>
+        <button id="drawWalls">Draw Walls</button>
+        <button id="clearWalls">Clear Walls</button>
+    </div>
+    <canvas id="game"></canvas>
+   <script type="module" src="/main.js"></script>
+</body>
+</html>
