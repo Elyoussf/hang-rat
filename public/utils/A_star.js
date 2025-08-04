@@ -39,7 +39,7 @@ export function A_star(start, goal, grid) {
 
   const directions = [
     [0, 1], [1, 0], [0, -1], [-1, 0],
-    [1, 1], [-1, -1], [-1, 1], [1, -1], // optional diagonals
+    [1, 1], [-1, -1], [-1, 1], [1, -1], 
   ];
 
   while (!open_list.isEmpty()) {
