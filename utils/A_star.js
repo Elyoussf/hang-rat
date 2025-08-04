@@ -27,7 +27,7 @@ function reconstruct_path(came_from, end, start) {
   return path.reverse();
 }
 
-export function A_star(start, goal, grid) {
+function A_star(start, goal, grid) {
   const open_list = new PriorityQueue();
   const came_from = new Map();
   const g_score = new Map();
@@ -80,3 +80,5 @@ export function A_star(start, goal, grid) {
  
   return null; // No path found
 }
+
+export {A_star}
