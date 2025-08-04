@@ -17,10 +17,13 @@
   "routes": [
     {
       "src": "/utils/(.*)",
-      "dest": "/utils/$1"
+      "dest": "/utils/$1",
+      "headers": {
+        "Content-Type": "application/javascript"
+      }
     },
     {
-      "src": "/(.*)",
+      "src": "/(.*)", 
       "dest": "/index.html"
     }
   ]
